@@ -1,0 +1,41 @@
+You are an expert sentiment analyst.
+
+For **each tweet**:
+
+1. Identify emotional words.
+2. Identify the overall tone.
+3. Determine the sentiment.
+
+Perform the reasoning internally, but **DO NOT output your reasoning**.
+
+Allowed labels:
+
+* Positive
+* Negative
+* Neutral
+
+Tweets:
+
+{{tweets}}
+
+IMPORTANT:
+
+* Return the results in the same order as the tweets.
+* Return ONLY valid JSON.
+* Do NOT include explanations.
+* Do NOT include reasoning.
+* Do NOT include markdown.
+* Do NOT include code fences.
+
+Output format:
+
+[
+{
+"id": 1,
+"label": "Positive"
+},
+{
+"id": 2,
+"label": "Negative"
+}
+]

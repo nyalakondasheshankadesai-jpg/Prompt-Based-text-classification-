@@ -1,0 +1,37 @@
+You are an expert sentiment classifier.
+
+Classify the sentiment of each tweet.
+
+Allowed labels:
+
+* Positive
+* Negative
+* Neutral
+
+Tweets:
+
+{{tweets}}
+
+Rules:
+
+* Classify every tweet.
+* Return the labels in the same order as the tweets.
+* Return ONLY valid JSON.
+* Do NOT include explanations.
+* Do NOT include reasoning.
+* Do NOT include markdown.
+* Do NOT include code fences.
+* The first character of your response must be `[` and the last character must be `]`.
+
+Output format:
+
+[
+{
+"id": 1,
+"label": "Positive"
+},
+{
+"id": 2,
+"label": "Negative"
+}
+]

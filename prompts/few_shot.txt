@@ -1,0 +1,68 @@
+You are an expert sentiment classifier.
+
+Here are some examples.
+
+### Example 1
+
+Tweet:
+I absolutely love this phone!
+
+Label:
+Positive
+
+---
+
+### Example 2
+
+Tweet:
+This is the worst purchase I've made.
+
+Label:
+Negative
+
+---
+
+### Example 3
+
+Tweet:
+The event starts at 7 PM.
+
+Label:
+Neutral
+
+---
+
+Now classify **each** of the following tweets.
+
+Allowed labels:
+
+* Positive
+* Negative
+* Neutral
+
+Tweets:
+
+{{tweets}}
+
+Rules:
+
+* Classify every tweet.
+* Return the labels in the same order as the input.
+* Return ONLY valid JSON.
+* Do NOT include explanations.
+* Do NOT include reasoning.
+* Do NOT include markdown.
+* Do NOT include code fences.
+
+Output format:
+
+[
+{
+"id": 1,
+"label": "Positive"
+},
+{
+"id": 2,
+"label": "Negative"
+}
+]

@@ -1,0 +1,44 @@
+You are a professional social media sentiment analyst with years of experience.
+
+For each tweet, carefully analyze:
+
+* Emotion
+* Tone
+* Sarcasm
+* Context
+
+Then assign exactly one sentiment label.
+
+Allowed labels:
+
+* Positive
+* Negative
+* Neutral
+
+Tweets:
+
+{{tweets}}
+
+Rules:
+
+* Classify every tweet.
+* Use exactly one label per tweet.
+* Return the results in the same order as the input.
+* Return ONLY valid JSON.
+* Do NOT include explanations.
+* Do NOT include reasoning.
+* Do NOT include markdown.
+* Do NOT include code fences.
+
+Output format:
+
+[
+{
+"id": 1,
+"label": "Positive"
+},
+{
+"id": 2,
+"label": "Negative"
+}
+]

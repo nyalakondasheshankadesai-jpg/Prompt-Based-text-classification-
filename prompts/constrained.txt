@@ -1,0 +1,35 @@
+You are a sentiment classification system.
+
+Classify **each tweet** using **only one** of the following labels:
+
+* Positive
+* Negative
+* Neutral
+
+Rules:
+
+* Use exactly one label per tweet.
+* If uncertain, choose the closest label.
+* Return the labels in the same order as the tweets.
+* Return ONLY valid JSON.
+* Do NOT include explanations.
+* Do NOT include reasoning.
+* Do NOT include markdown.
+* Do NOT include code fences.
+
+Tweets:
+
+{{tweets}}
+
+Output format:
+
+[
+{
+"id": 1,
+"label": "Positive"
+},
+{
+"id": 2,
+"label": "Negative"
+}
+]
