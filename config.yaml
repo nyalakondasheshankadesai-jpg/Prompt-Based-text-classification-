@@ -1,0 +1,22 @@
+dataset:
+  train: data/twitter_training.csv
+  validation: data/twitter_validation.csv
+
+sample_size: 10
+
+batch_size: 5
+
+model:
+  provider: gemini
+  name: gemini-2.5-flash
+
+experiment:
+  strategies:
+    - zero_shot
+    - few_shot
+    - role
+    - chain_of_thought
+    - constrained
+
+output:
+  folder: outputs
